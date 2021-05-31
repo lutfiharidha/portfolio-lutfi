@@ -1,0 +1,129 @@
+doctype html
+html
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name='viewport', content='width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0')
+    link(rel="stylesheet", href="/stylesheets/style.css")
+    link(rel="stylesheet", href="/stylesheets/uikit.min.css")
+    script(src="/javascripts/uikit.min.js")
+    script(src="/javascripts/uikit-icons.min.js")
+    title Lutfi
+  body
+    #cover.uk-background-cover(uk-height-viewport="offset-top: true")
+      div(uk-sticky='animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light; top: 200')
+        nav.uk-navbar-container
+          .uk-container.uk-container-medium
+            div(uk-navbar='')
+              .uk-navbar-item#aboutme
+                .logo Lutfi
+              .uk-navbar-right
+                ul.uk-navbar-nav
+                  li.uk-active
+                    a(href='#') 
+                      b Home 
+                  li.uk-active
+                    a(href='/blog')
+                      b My Journey
+                  li.uk-active
+                    a(href='#')
+                      b CV
+      .uk-position-center.uk-light#aboutme  
+        h1.uk-overlay.uk-overlay-default.uk-dark Welcome.
+    .uk-light.uk-padding.uk-flex.uk-flex-center(style="background:#2B4043")
+      .uk-container.uk-container-medium(class="uk-child-width-1-3@m uk-grid" ) 
+        #aboutme
+          h1 About Me
+            hr
+          b PHP 
+            progress(class="uk-progress" id="js-progressbar" value="70" max="100")
+          b Laravel 
+            progress(class="uk-progress" id="js-progressbar" value="70" max="100")
+          b Node Js 
+            progress(class="uk-progress" id="js-progressbar" value="70" max="100")
+          b Express Js 
+            progress(class="uk-progress" id="js-progressbar" value="70" max="100")
+          b MySQL 
+            progress(class="uk-progress" id="js-progressbar" value="70" max="100")
+          b MongooDB 
+            progress(class="uk-progress" id="js-progressbar" value="70" max="100")
+        div(class="uk-width-1-3@m")
+          img(src="/images/lutfi.jpeg", alt="", srcset="")
+        #aboutme
+          h3 WHO AM I
+          #aboutme
+            h2(style="background:#AF5B5D")  LUTFI HARIDHA.
+            b Backend Developer
+            p Nulla metus metus ullamcorper vel tincidunt sed euismod nibh Quisque volutpat condimentum velit class aptent taciti sociosqu ad litora.
+              | Nulla metus metus ullamcorper vel tincidunt sed euismod nibh Quisque volutpat condimentum velit class aptent taciti sociosqu ad litora torquent metus metus ullamcorper vel tincidunt sed class aptent taciti sociosqu ad litora.
+            b Follow me: 
+              .uk-float-right
+                span(class="uk-margin-small-right" uk-icon="icon: linkedin")
+                span(class="uk-margin-small-right" uk-icon="icon: instagram")
+                span(uk-icon="icon: github")
+              hr
+    .uk-light.uk-padding(style="background:#AF5B5D")
+      .uk-container.uk-container-medium
+        #aboutme.uk-text-center
+          h1 Services
+            hr
+        .uk-grid-small.uk-text-center#aboutme(class='uk-child-width-expand@s' uk-grid='')
+          div
+            .uk-card.uk-card-default.uk-card-body.uk-light
+              b Web Design 
+              p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde distinctio quis fugit dignissimos, accusamus adipisci aperiam.
+          div
+            .uk-card.uk-card-default.uk-card-body.uk-light
+              b Development 
+              p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde distinctio quis fugit dignissimos, accusamus adipisci aperiam.
+          div
+            .uk-card.uk-card-default.uk-card-body.uk-light
+              b Branding 
+              p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde distinctio quis fugit dignissimos, accusamus adipisci aperiam.
+          div
+            .uk-card.uk-card-default.uk-card-body.uk-light
+              b Marketing 
+              p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde distinctio quis fugit dignissimos, accusamus adipisci aperiam.
+    .uk-light.uk-padding(style="background:#2B4043")
+      .uk-container.uk-container-medium
+        #aboutme.uk-text-center
+          h1 Our Blog
+            hr
+        .uk-grid-small.uk-text-center#aboutme(class='uk-child-width-1-3@m' uk-grid='')
+          - for (var i = 0; i < 9; ++i) {
+          .uk-text-center
+            .uk-inline-clip.uk-transition-toggle(tabindex='0')
+              img#blog.uk-transition-scale-up.uk-transition-opaque(src='https://getuikit.com/docs/images/dark.jpg' alt='')
+              .uk-position-center
+                h3 Title Post #{i+1} 
+                span.uk-transition-fade 
+                  b Read More
+                  hr
+                  
+          - }
+    .uk-light.uk-padding(style="background:#AF5B5D")
+      .uk-container.uk-container-medium
+        #aboutme.uk-text-center
+          h1 Contact Us
+            hr
+        .uk-grid-small#aboutme(class='uk-child-width-1-2@m' uk-grid='')
+          div.uk-width-1-3
+            b Phone :
+              p +20 010 2517 8918
+            b Address :
+              p 3rd Avenue, Upper East Side, San Francisco
+            b Email :
+              p lutfiharidha1@gmail.com
+            p &copy; 2021 
+              b Lutfi. 
+              span(uk-icon="icon:heart;") Design with 
+          div.uk-width-expand
+            form
+              div.uk-grid-small(uk-grid='')
+                div(class='uk-width-1-2@s')
+                  input.uk-input(type='text' placeholder='Name* :')
+                div(class='uk-width-1-2@s')
+                  input.uk-input(type='text' placeholder='E-mail* :')
+                .uk-width-1-1.uk-margin
+                  textarea(class="uk-textarea", name="", placeholder="Message* :", cols="30", rows="10")
+              button.uk-button.uk-button-default.uk-float-right.uk-button-large Send Message

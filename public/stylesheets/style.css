@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400;700&display=swap');
+
+#cover {
+    height: 100%;
+    background-image: url("https://wallpaperaccess.com/full/2190534.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#aboutme h1 {
+    font-family: 'Josefin Sans',
+        sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+#aboutme h3 {
+    font-family: 'Josefin Sans',
+        sans-serif;
+    font-weight: 100;
+}
+
+#aboutme h2 {
+    font-family: 'Josefin Sans',
+        sans-serif;
+    font-weight: 400;
+}
+
+#aboutme b {
+    font-family: 'Josefin Sans',
+        sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+#aboutme .logo {
+    font-family: 'Josefin Sans',
+        sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+#blog {
+    -webkit-filter: blur(4px);
+    /* Chrome, Safari, Opera */
+    filter: blur(4px);
+}
+
+#blog:hover {
+    -webkit-filter: blur(0px);
+    /* Chrome, Safari, Opera */
+    filter: blur(0px);
+}
